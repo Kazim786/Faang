@@ -5,7 +5,7 @@ let target = 11
 
 
 
-const finder = (arr) => 
+const finder = (arr, t) => 
 {
   const index = []
     if(arr.length === 0 || arr.length === 1)
@@ -19,7 +19,7 @@ const finder = (arr) =>
   {
     for(let j = (i + 1); j < arr.length; j++)
     {
-      if(arr[i] + arr[j] === target)
+      if(arr[i] + arr[j] === t)
       {
         index.push(i, j)
       }
@@ -32,7 +32,7 @@ const finder = (arr) =>
 return index;
 }
 
-console.log(finder(numbs))
+console.log(finder(numbs, target))
 
 //IT WORKS :D
 
