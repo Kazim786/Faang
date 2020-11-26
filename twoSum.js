@@ -1,6 +1,6 @@
 //First faang problem
 
-const numbs = [1, 3, 7, 9, 2];
+const numbs = [1, 3, 7, 9, 3];
 let target = 11
 
 
@@ -22,14 +22,12 @@ const finder = (arr, t) =>
       if(arr[i] + arr[j] === t)
       {
         index.push(i, j)
+        return index
       }
-      else 
-      {
-        alert("No 2 numbers fit the constraint")
-      }
+     
     }
   }
-return index;
+return null;
 }
 
 console.log(finder(numbs, target))
