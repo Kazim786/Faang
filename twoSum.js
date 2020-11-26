@@ -24,3 +24,5 @@ return index;
 console.log(finder(numbs))
 
 //IT WORKS :D
+
+//Brute force solution
