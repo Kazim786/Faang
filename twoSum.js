@@ -23,6 +23,10 @@ const finder = (arr) =>
       {
         index.push(i, j)
       }
+      else 
+      {
+        alert("No 2 numbers fit the constraint")
+      }
     }
   }
 return index;
