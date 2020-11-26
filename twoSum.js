@@ -8,6 +8,13 @@ let target = 11
 const finder = (arr) => 
 {
   const index = []
+    if(arr.length === 0 || arr.length === 1)
+    {
+        alert("Array does not fit constraint")
+    }
+
+
+
   for(let i = 0; i < arr.length; i++)
   {
     for(let j = (i + 1); j < arr.length; j++)
